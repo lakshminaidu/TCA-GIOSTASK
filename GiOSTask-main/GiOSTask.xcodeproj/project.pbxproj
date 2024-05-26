@@ -1,0 +1,873 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F23F70D12B07690100694CF0 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23F70D02B07690100694CF0 /* FilterView.swift */; };
+		F23F70D32B07D83500694CF0 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23F70D22B07D83500694CF0 /* TabButton.swift */; };
+		F23F70D52B07D85700694CF0 /* IconBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23F70D42B07D85700694CF0 /* IconBtn.swift */; };
+		F23F70D72B07D99800694CF0 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23F70D62B07D99800694CF0 /* TabbarView.swift */; };
+		F27F9DE12B19F3E4004653FA /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = F27F9DE02B19F3E4004653FA /* ComposableArchitecture */; };
+		F27F9DE72B1B3FF9004653FA /* CoinFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F9DE62B1B3FF9004653FA /* CoinFeatureView.swift */; };
+		F27F9DE92B1B4044004653FA /* CoinFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F9DE82B1B4044004653FA /* CoinFeature.swift */; };
+		F28919B32B03F58900B5E27A /* GiOSTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28919B22B03F58900B5E27A /* GiOSTaskApp.swift */; };
+		F28919B72B03F58A00B5E27A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28919B62B03F58A00B5E27A /* Assets.xcassets */; };
+		F28919BA2B03F58A00B5E27A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F28919B92B03F58A00B5E27A /* Preview Assets.xcassets */; };
+		F28919C42B03F58A00B5E27A /* GiOSTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28919C32B03F58A00B5E27A /* GiOSTaskTests.swift */; };
+		F28919CE2B03F58A00B5E27A /* GiOSTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28919CD2B03F58A00B5E27A /* GiOSTaskUITests.swift */; };
+		F28919D02B03F58A00B5E27A /* GiOSTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28919CF2B03F58A00B5E27A /* GiOSTaskUITestsLaunchTests.swift */; };
+		F28919DE2B03F5D300B5E27A /* CoionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28919DD2B03F5D300B5E27A /* CoionModel.swift */; };
+		F28919E22B03F95200B5E27A /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28919E12B03F95200B5E27A /* ApiManager.swift */; };
+		F28919E52B03F99600B5E27A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28919E42B03F99600B5E27A /* Constants.swift */; };
+		F28919F62B05412600B5E27A /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = F28919F52B05412600B5E27A /* SwiftUICharts */; };
+		F28919F92B05418C00B5E27A /* NetworkImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28919F82B05418C00B5E27A /* NetworkImageView.swift */; };
+		F2891A052B05424B00B5E27A /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F28919FC2B05424B00B5E27A /* Inter-Medium.ttf */; };
+		F2891A062B05424B00B5E27A /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F28919FD2B05424B00B5E27A /* Inter-Light.ttf */; };
+		F2891A072B05424B00B5E27A /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F28919FE2B05424B00B5E27A /* Inter-Thin.ttf */; };
+		F2891A082B05424B00B5E27A /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F28919FF2B05424B00B5E27A /* Inter-Bold.ttf */; };
+		F2891A092B05424B00B5E27A /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2891A002B05424B00B5E27A /* Inter-Regular.ttf */; };
+		F2891A0A2B05424B00B5E27A /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2891A012B05424B00B5E27A /* Inter-ExtraBold.ttf */; };
+		F2891A0B2B05424B00B5E27A /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2891A022B05424B00B5E27A /* Inter-ExtraLight.ttf */; };
+		F2891A0C2B05424B00B5E27A /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2891A032B05424B00B5E27A /* Inter-Black.ttf */; };
+		F2891A0D2B05424B00B5E27A /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2891A042B05424B00B5E27A /* Inter-SemiBold.ttf */; };
+		F2891A142B0542F700B5E27A /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2891A0E2B0542F700B5E27A /* ChartView.swift */; };
+		F2891A152B0542F700B5E27A /* CryptoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2891A0F2B0542F700B5E27A /* CryptoList.swift */; };
+		F2891A162B0542F700B5E27A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2891A102B0542F700B5E27A /* HeaderView.swift */; };
+		F2891A172B0542F700B5E27A /* SearchSubHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2891A112B0542F700B5E27A /* SearchSubHeaderView.swift */; };
+		F2891A182B0542F700B5E27A /* FilterOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2891A122B0542F700B5E27A /* FilterOptionView.swift */; };
+		F2891A192B0542F700B5E27A /* ChartInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2891A132B0542F700B5E27A /* ChartInfoView.swift */; };
+		F2891A1B2B0543FA00B5E27A /* CryptoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2891A1A2B0543FA00B5E27A /* CryptoCell.swift */; };
+		F2891A202B05441C00B5E27A /* SettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2891A1C2B05441C00B5E27A /* SettingsButton.swift */; };
+		F2891A212B05441C00B5E27A /* HeaderTextElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2891A1D2B05441C00B5E27A /* HeaderTextElement.swift */; };
+		F2891A222B05441C00B5E27A /* TextElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2891A1E2B05441C00B5E27A /* TextElement.swift */; };
+		F2891A232B05441C00B5E27A /* NotificationsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2891A1F2B05441C00B5E27A /* NotificationsButton.swift */; };
+		F2891A252B06945700B5E27A /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = F2891A242B06945700B5E27A /* Data.json */; };
+		F2891A272B069CE000B5E27A /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2891A262B069CE000B5E27A /* EndPoint.swift */; };
+		F2891A292B069E5200B5E27A /* CoinRatesEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2891A282B069E5200B5E27A /* CoinRatesEndPoint.swift */; };
+		F2891A2B2B07576B00B5E27A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2891A2A2B07576B00B5E27A /* LoadingView.swift */; };
+		F2891A2E2B075ABD00B5E27A /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2891A2D2B075ABD00B5E27A /* StringConstants.swift */; };
+		F2891A302B075AF700B5E27A /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2891A2F2B075AF700B5E27A /* Color+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F28919C02B03F58A00B5E27A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F28919A72B03F58900B5E27A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F28919AE2B03F58900B5E27A;
+			remoteInfo = GiOSTask;
+		};
+		F28919CA2B03F58A00B5E27A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F28919A72B03F58900B5E27A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F28919AE2B03F58900B5E27A;
+			remoteInfo = GiOSTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F23F70D02B07690100694CF0 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		F23F70D22B07D83500694CF0 /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
+		F23F70D42B07D85700694CF0 /* IconBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconBtn.swift; sourceTree = "<group>"; };
+		F23F70D62B07D99800694CF0 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		F23F70D82B07DF4000694CF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F27F9DE62B1B3FF9004653FA /* CoinFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinFeatureView.swift; sourceTree = "<group>"; };
+		F27F9DE82B1B4044004653FA /* CoinFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinFeature.swift; sourceTree = "<group>"; };
+		F28919AF2B03F58900B5E27A /* GiOSTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiOSTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F28919B22B03F58900B5E27A /* GiOSTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiOSTaskApp.swift; sourceTree = "<group>"; };
+		F28919B62B03F58A00B5E27A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F28919B92B03F58A00B5E27A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F28919BF2B03F58A00B5E27A /* GiOSTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiOSTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F28919C32B03F58A00B5E27A /* GiOSTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiOSTaskTests.swift; sourceTree = "<group>"; };
+		F28919C92B03F58A00B5E27A /* GiOSTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiOSTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F28919CD2B03F58A00B5E27A /* GiOSTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiOSTaskUITests.swift; sourceTree = "<group>"; };
+		F28919CF2B03F58A00B5E27A /* GiOSTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiOSTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F28919DD2B03F5D300B5E27A /* CoionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoionModel.swift; sourceTree = "<group>"; };
+		F28919E12B03F95200B5E27A /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		F28919E42B03F99600B5E27A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F28919F82B05418C00B5E27A /* NetworkImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImageView.swift; sourceTree = "<group>"; };
+		F28919FC2B05424B00B5E27A /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		F28919FD2B05424B00B5E27A /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		F28919FE2B05424B00B5E27A /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		F28919FF2B05424B00B5E27A /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		F2891A002B05424B00B5E27A /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		F2891A012B05424B00B5E27A /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		F2891A022B05424B00B5E27A /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		F2891A032B05424B00B5E27A /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		F2891A042B05424B00B5E27A /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		F2891A0E2B0542F700B5E27A /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		F2891A0F2B0542F700B5E27A /* CryptoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoList.swift; sourceTree = "<group>"; };
+		F2891A102B0542F700B5E27A /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		F2891A112B0542F700B5E27A /* SearchSubHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSubHeaderView.swift; sourceTree = "<group>"; };
+		F2891A122B0542F700B5E27A /* FilterOptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterOptionView.swift; sourceTree = "<group>"; };
+		F2891A132B0542F700B5E27A /* ChartInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartInfoView.swift; sourceTree = "<group>"; };
+		F2891A1A2B0543FA00B5E27A /* CryptoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoCell.swift; sourceTree = "<group>"; };
+		F2891A1C2B05441C00B5E27A /* SettingsButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsButton.swift; sourceTree = "<group>"; };
+		F2891A1D2B05441C00B5E27A /* HeaderTextElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTextElement.swift; sourceTree = "<group>"; };
+		F2891A1E2B05441C00B5E27A /* TextElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextElement.swift; sourceTree = "<group>"; };
+		F2891A1F2B05441C00B5E27A /* NotificationsButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsButton.swift; sourceTree = "<group>"; };
+		F2891A242B06945700B5E27A /* Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
+		F2891A262B069CE000B5E27A /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		F2891A282B069E5200B5E27A /* CoinRatesEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRatesEndPoint.swift; sourceTree = "<group>"; };
+		F2891A2A2B07576B00B5E27A /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		F2891A2D2B075ABD00B5E27A /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
+		F2891A2F2B075AF700B5E27A /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F28919AC2B03F58900B5E27A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F27F9DE12B19F3E4004653FA /* ComposableArchitecture in Frameworks */,
+				F28919F62B05412600B5E27A /* SwiftUICharts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F28919BC2B03F58A00B5E27A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F28919C62B03F58A00B5E27A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F27F9DE42B1B3FC8004653FA /* CoinFeature */ = {
+			isa = PBXGroup;
+			children = (
+				F27F9DE52B1B3FED004653FA /* view */,
+			);
+			path = CoinFeature;
+			sourceTree = "<group>";
+		};
+		F27F9DE52B1B3FED004653FA /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F27F9DE62B1B3FF9004653FA /* CoinFeatureView.swift */,
+				F27F9DE82B1B4044004653FA /* CoinFeature.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F28919A62B03F58900B5E27A = {
+			isa = PBXGroup;
+			children = (
+				F28919B12B03F58900B5E27A /* GiOSTask */,
+				F28919C22B03F58A00B5E27A /* GiOSTaskTests */,
+				F28919CC2B03F58A00B5E27A /* GiOSTaskUITests */,
+				F28919B02B03F58900B5E27A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F28919B02B03F58900B5E27A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F28919AF2B03F58900B5E27A /* GiOSTask.app */,
+				F28919BF2B03F58A00B5E27A /* GiOSTaskTests.xctest */,
+				F28919C92B03F58A00B5E27A /* GiOSTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F28919B12B03F58900B5E27A /* GiOSTask */ = {
+			isa = PBXGroup;
+			children = (
+				F23F70D82B07DF4000694CF0 /* Info.plist */,
+				F28919B22B03F58900B5E27A /* GiOSTaskApp.swift */,
+				F27F9DE42B1B3FC8004653FA /* CoinFeature */,
+				F28919EE2B05400B00B5E27A /* Presentation */,
+				F28919DC2B03F5BD00B5E27A /* Data */,
+				F28919B62B03F58A00B5E27A /* Assets.xcassets */,
+				F28919DF2B03F93300B5E27A /* Core */,
+				F28919FA2B05423A00B5E27A /* Resources */,
+				F28919B82B03F58A00B5E27A /* Preview Content */,
+				F2891A282B069E5200B5E27A /* CoinRatesEndPoint.swift */,
+			);
+			path = GiOSTask;
+			sourceTree = "<group>";
+		};
+		F28919B82B03F58A00B5E27A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F28919B92B03F58A00B5E27A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F28919C22B03F58A00B5E27A /* GiOSTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				F28919C32B03F58A00B5E27A /* GiOSTaskTests.swift */,
+			);
+			path = GiOSTaskTests;
+			sourceTree = "<group>";
+		};
+		F28919CC2B03F58A00B5E27A /* GiOSTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F28919CD2B03F58A00B5E27A /* GiOSTaskUITests.swift */,
+				F28919CF2B03F58A00B5E27A /* GiOSTaskUITestsLaunchTests.swift */,
+			);
+			path = GiOSTaskUITests;
+			sourceTree = "<group>";
+		};
+		F28919DC2B03F5BD00B5E27A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F28919E62B03FB7E00B5E27A /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F28919DF2B03F93300B5E27A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F2891A2C2B075AA400B5E27A /* Extensions */,
+				F28919F82B05418C00B5E27A /* NetworkImageView.swift */,
+				F28919E32B03F98100B5E27A /* Uitils */,
+				F28919E02B03F93A00B5E27A /* Service */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F28919E02B03F93A00B5E27A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F28919E12B03F95200B5E27A /* ApiManager.swift */,
+				F2891A262B069CE000B5E27A /* EndPoint.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F28919E32B03F98100B5E27A /* Uitils */ = {
+			isa = PBXGroup;
+			children = (
+				F28919E42B03F99600B5E27A /* Constants.swift */,
+				F2891A2D2B075ABD00B5E27A /* StringConstants.swift */,
+			);
+			path = Uitils;
+			sourceTree = "<group>";
+		};
+		F28919E62B03FB7E00B5E27A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F28919DD2B03F5D300B5E27A /* CoionModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F28919EE2B05400B00B5E27A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F28919F72B05416200B5E27A /* Components */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F28919F72B05416200B5E27A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F2891A132B0542F700B5E27A /* ChartInfoView.swift */,
+				F2891A0E2B0542F700B5E27A /* ChartView.swift */,
+				F2891A1A2B0543FA00B5E27A /* CryptoCell.swift */,
+				F2891A0F2B0542F700B5E27A /* CryptoList.swift */,
+				F2891A122B0542F700B5E27A /* FilterOptionView.swift */,
+				F2891A102B0542F700B5E27A /* HeaderView.swift */,
+				F2891A112B0542F700B5E27A /* SearchSubHeaderView.swift */,
+				F2891A1D2B05441C00B5E27A /* HeaderTextElement.swift */,
+				F2891A1F2B05441C00B5E27A /* NotificationsButton.swift */,
+				F2891A1C2B05441C00B5E27A /* SettingsButton.swift */,
+				F2891A1E2B05441C00B5E27A /* TextElement.swift */,
+				F23F70D02B07690100694CF0 /* FilterView.swift */,
+				F2891A2A2B07576B00B5E27A /* LoadingView.swift */,
+				F23F70D22B07D83500694CF0 /* TabButton.swift */,
+				F23F70D62B07D99800694CF0 /* TabbarView.swift */,
+				F23F70D42B07D85700694CF0 /* IconBtn.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F28919FA2B05423A00B5E27A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F2891A242B06945700B5E27A /* Data.json */,
+				F28919FB2B05424B00B5E27A /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F28919FB2B05424B00B5E27A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F28919FC2B05424B00B5E27A /* Inter-Medium.ttf */,
+				F28919FD2B05424B00B5E27A /* Inter-Light.ttf */,
+				F28919FE2B05424B00B5E27A /* Inter-Thin.ttf */,
+				F28919FF2B05424B00B5E27A /* Inter-Bold.ttf */,
+				F2891A002B05424B00B5E27A /* Inter-Regular.ttf */,
+				F2891A012B05424B00B5E27A /* Inter-ExtraBold.ttf */,
+				F2891A022B05424B00B5E27A /* Inter-ExtraLight.ttf */,
+				F2891A032B05424B00B5E27A /* Inter-Black.ttf */,
+				F2891A042B05424B00B5E27A /* Inter-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F2891A2C2B075AA400B5E27A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F2891A2F2B075AF700B5E27A /* Color+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F28919AE2B03F58900B5E27A /* GiOSTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F28919D32B03F58A00B5E27A /* Build configuration list for PBXNativeTarget "GiOSTask" */;
+			buildPhases = (
+				F28919AB2B03F58900B5E27A /* Sources */,
+				F28919AC2B03F58900B5E27A /* Frameworks */,
+				F28919AD2B03F58900B5E27A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GiOSTask;
+			packageProductDependencies = (
+				F28919F52B05412600B5E27A /* SwiftUICharts */,
+				F27F9DE02B19F3E4004653FA /* ComposableArchitecture */,
+			);
+			productName = GiOSTask;
+			productReference = F28919AF2B03F58900B5E27A /* GiOSTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F28919BE2B03F58A00B5E27A /* GiOSTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F28919D62B03F58A00B5E27A /* Build configuration list for PBXNativeTarget "GiOSTaskTests" */;
+			buildPhases = (
+				F28919BB2B03F58A00B5E27A /* Sources */,
+				F28919BC2B03F58A00B5E27A /* Frameworks */,
+				F28919BD2B03F58A00B5E27A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F28919C12B03F58A00B5E27A /* PBXTargetDependency */,
+			);
+			name = GiOSTaskTests;
+			productName = GiOSTaskTests;
+			productReference = F28919BF2B03F58A00B5E27A /* GiOSTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F28919C82B03F58A00B5E27A /* GiOSTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F28919D92B03F58A00B5E27A /* Build configuration list for PBXNativeTarget "GiOSTaskUITests" */;
+			buildPhases = (
+				F28919C52B03F58A00B5E27A /* Sources */,
+				F28919C62B03F58A00B5E27A /* Frameworks */,
+				F28919C72B03F58A00B5E27A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F28919CB2B03F58A00B5E27A /* PBXTargetDependency */,
+			);
+			name = GiOSTaskUITests;
+			productName = GiOSTaskUITests;
+			productReference = F28919C92B03F58A00B5E27A /* GiOSTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F28919A72B03F58900B5E27A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F28919AE2B03F58900B5E27A = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					F28919BE2B03F58A00B5E27A = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = F28919AE2B03F58900B5E27A;
+					};
+					F28919C82B03F58A00B5E27A = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = F28919AE2B03F58900B5E27A;
+					};
+				};
+			};
+			buildConfigurationList = F28919AA2B03F58900B5E27A /* Build configuration list for PBXProject "GiOSTask" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F28919A62B03F58900B5E27A;
+			packageReferences = (
+				F28919F42B05412600B5E27A /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
+				F27F9DDF2B19F3E4004653FA /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
+			productRefGroup = F28919B02B03F58900B5E27A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F28919AE2B03F58900B5E27A /* GiOSTask */,
+				F28919BE2B03F58A00B5E27A /* GiOSTaskTests */,
+				F28919C82B03F58A00B5E27A /* GiOSTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F28919AD2B03F58900B5E27A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2891A082B05424B00B5E27A /* Inter-Bold.ttf in Resources */,
+				F28919BA2B03F58A00B5E27A /* Preview Assets.xcassets in Resources */,
+				F28919B72B03F58A00B5E27A /* Assets.xcassets in Resources */,
+				F2891A0D2B05424B00B5E27A /* Inter-SemiBold.ttf in Resources */,
+				F2891A0A2B05424B00B5E27A /* Inter-ExtraBold.ttf in Resources */,
+				F2891A062B05424B00B5E27A /* Inter-Light.ttf in Resources */,
+				F2891A072B05424B00B5E27A /* Inter-Thin.ttf in Resources */,
+				F2891A052B05424B00B5E27A /* Inter-Medium.ttf in Resources */,
+				F2891A0C2B05424B00B5E27A /* Inter-Black.ttf in Resources */,
+				F2891A0B2B05424B00B5E27A /* Inter-ExtraLight.ttf in Resources */,
+				F2891A092B05424B00B5E27A /* Inter-Regular.ttf in Resources */,
+				F2891A252B06945700B5E27A /* Data.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F28919BD2B03F58A00B5E27A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F28919C72B03F58A00B5E27A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F28919AB2B03F58900B5E27A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F23F70D72B07D99800694CF0 /* TabbarView.swift in Sources */,
+				F23F70D52B07D85700694CF0 /* IconBtn.swift in Sources */,
+				F2891A152B0542F700B5E27A /* CryptoList.swift in Sources */,
+				F2891A1B2B0543FA00B5E27A /* CryptoCell.swift in Sources */,
+				F28919E52B03F99600B5E27A /* Constants.swift in Sources */,
+				F23F70D12B07690100694CF0 /* FilterView.swift in Sources */,
+				F2891A212B05441C00B5E27A /* HeaderTextElement.swift in Sources */,
+				F28919E22B03F95200B5E27A /* ApiManager.swift in Sources */,
+				F2891A302B075AF700B5E27A /* Color+Extension.swift in Sources */,
+				F2891A2B2B07576B00B5E27A /* LoadingView.swift in Sources */,
+				F2891A292B069E5200B5E27A /* CoinRatesEndPoint.swift in Sources */,
+				F2891A232B05441C00B5E27A /* NotificationsButton.swift in Sources */,
+				F2891A222B05441C00B5E27A /* TextElement.swift in Sources */,
+				F28919DE2B03F5D300B5E27A /* CoionModel.swift in Sources */,
+				F2891A192B0542F700B5E27A /* ChartInfoView.swift in Sources */,
+				F2891A2E2B075ABD00B5E27A /* StringConstants.swift in Sources */,
+				F28919F92B05418C00B5E27A /* NetworkImageView.swift in Sources */,
+				F2891A272B069CE000B5E27A /* EndPoint.swift in Sources */,
+				F2891A202B05441C00B5E27A /* SettingsButton.swift in Sources */,
+				F23F70D32B07D83500694CF0 /* TabButton.swift in Sources */,
+				F2891A142B0542F700B5E27A /* ChartView.swift in Sources */,
+				F2891A182B0542F700B5E27A /* FilterOptionView.swift in Sources */,
+				F28919B32B03F58900B5E27A /* GiOSTaskApp.swift in Sources */,
+				F27F9DE72B1B3FF9004653FA /* CoinFeatureView.swift in Sources */,
+				F2891A172B0542F700B5E27A /* SearchSubHeaderView.swift in Sources */,
+				F2891A162B0542F700B5E27A /* HeaderView.swift in Sources */,
+				F27F9DE92B1B4044004653FA /* CoinFeature.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F28919BB2B03F58A00B5E27A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F28919C42B03F58A00B5E27A /* GiOSTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F28919C52B03F58A00B5E27A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F28919D02B03F58A00B5E27A /* GiOSTaskUITestsLaunchTests.swift in Sources */,
+				F28919CE2B03F58A00B5E27A /* GiOSTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F28919C12B03F58A00B5E27A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F28919AE2B03F58900B5E27A /* GiOSTask */;
+			targetProxy = F28919C02B03F58A00B5E27A /* PBXContainerItemProxy */;
+		};
+		F28919CB2B03F58A00B5E27A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F28919AE2B03F58900B5E27A /* GiOSTask */;
+			targetProxy = F28919CA2B03F58A00B5E27A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F28919D12B03F58A00B5E27A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F28919D22B03F58A00B5E27A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F28919D42B03F58A00B5E27A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GiOSTask/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GiOSTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aaa.GiOSTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F28919D52B03F58A00B5E27A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GiOSTask/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GiOSTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aaa.GiOSTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F28919D72B03F58A00B5E27A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aaa.GiOSTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GiOSTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GiOSTask";
+			};
+			name = Debug;
+		};
+		F28919D82B03F58A00B5E27A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aaa.GiOSTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GiOSTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GiOSTask";
+			};
+			name = Release;
+		};
+		F28919DA2B03F58A00B5E27A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aaa.GiOSTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GiOSTask;
+			};
+			name = Debug;
+		};
+		F28919DB2B03F58A00B5E27A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aaa.GiOSTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GiOSTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F28919AA2B03F58900B5E27A /* Build configuration list for PBXProject "GiOSTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F28919D12B03F58A00B5E27A /* Debug */,
+				F28919D22B03F58A00B5E27A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F28919D32B03F58A00B5E27A /* Build configuration list for PBXNativeTarget "GiOSTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F28919D42B03F58A00B5E27A /* Debug */,
+				F28919D52B03F58A00B5E27A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F28919D62B03F58A00B5E27A /* Build configuration list for PBXNativeTarget "GiOSTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F28919D72B03F58A00B5E27A /* Debug */,
+				F28919D82B03F58A00B5E27A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F28919D92B03F58A00B5E27A /* Build configuration list for PBXNativeTarget "GiOSTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F28919DA2B03F58A00B5E27A /* Debug */,
+				F28919DB2B03F58A00B5E27A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F27F9DDF2B19F3E4004653FA /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.4;
+			};
+		};
+		F28919F42B05412600B5E27A /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/willdale/SwiftUICharts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F27F9DE02B19F3E4004653FA /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F27F9DDF2B19F3E4004653FA /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		F28919F52B05412600B5E27A /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F28919F42B05412600B5E27A /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F28919A72B03F58900B5E27A /* Project object */;
+}
